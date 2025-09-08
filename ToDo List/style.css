@@ -1,0 +1,126 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000, #111111);
+}
+
+/* Main container card */
+.main-container {
+  width: 350px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h3 {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: bold;
+}
+
+
+/* Input container */
+.input-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #66a6ff;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.input-container button {
+  padding: 0 15px;
+  background-color: #66a6ff;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-container button:hover {
+  background-color: #558de8;
+}
+
+/* Task container list */
+.task-container {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+/* Each task (li) */
+.task-container li {
+  display: flex;                  /* put text + button in one row */
+  justify-content: space-between; /* space between text and button */
+  align-items: center;            /* vertically center */
+  background: #f8faff;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Delete button */
+.task-container li .js-delete-task-btn {
+  background: #ff4e50;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 0.9rem;
+}
+
+/* Delete button hover */
+.task-container li .js-delete-task-btn:hover {
+  background: #e63b3d;
+}
+
+
+/* Clear button */
+.clear-all {
+  text-align: center;
+}
+
+.clear-all button {
+  padding: 8px 20px;
+  background-color: #ff4e50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.clear-all button:hover {
+  background-color: #e63b3d;
+}
